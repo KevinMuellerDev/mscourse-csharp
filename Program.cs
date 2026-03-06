@@ -1,5 +1,4 @@
-﻿using System;
-using MSCourse.Assignments;
+﻿using MSCourse.Assignments.Methods;
 
 namespace MSCourse;
 
@@ -7,10 +6,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        for (int i = 0; i < 20; i++)
-        {
-            CallMethods.RandomDice();    
-        }
+        //Used Methods from lectures:
+        //CallMethods.RandomDice();   
+        //CallMethods.OverloadedDice();
         
+        Conditions.SubscriptionRenewalRate();
     }
 }
