@@ -1,4 +1,5 @@
 ﻿using MSCourse.Assignments.Methods;
+using MSCourse.Assignments.DataStructures;
 
 namespace MSCourse;
 
@@ -9,7 +10,10 @@ class Program
         //Used Methods from lectures:
         //CallMethods.RandomDice();   
         //CallMethods.OverloadedDice();
-        
-        Conditions.SubscriptionRenewalRate();
+        //Conditions.SubscriptionRenewalRate();
+        //DataStructures.ArrayStructure();
+        //DataStructures.ArraySum();
+        //DataStructures.FraudulentIdAssignment();
+        DataAssignment.Assignment();
     }
 }
