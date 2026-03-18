@@ -1,4 +1,5 @@
-﻿using MSCourse.Assignments.Methods;
+﻿using MSCourse.Assignments;
+using MSCourse.Assignments.Methods;
 using MSCourse.Assignments.DataStructures;
 using MSCourse.Assignments.Evaluation;
 namespace MSCourse;
@@ -15,6 +16,7 @@ class Program
         //DataStructures.ArraySum();
         //DataStructures.FraudulentIdAssignment();
         //DataAssignment.Assignment();
-        BooleanEvaluation.CoinFlip();
+        //BooleanEvaluation.SwitchChallengeSku();
+        Loops.FizzBuzz();
     }
 }
