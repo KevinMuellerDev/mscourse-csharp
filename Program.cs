@@ -1,12 +1,11 @@
-﻿using MSCourse.Assignments;
-using MSCourse.Assignments.Methods;
-using MSCourse.Assignments.DataStructures;
-using MSCourse.Assignments.Evaluation;
+﻿using MSCourse.Assignments.Loops;
+
+
 namespace MSCourse;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //Used Methods from lectures:
         //CallMethods.RandomDice();   
@@ -17,6 +16,6 @@ class Program
         //DataStructures.FraudulentIdAssignment();
         //DataAssignment.Assignment();
         //BooleanEvaluation.SwitchChallengeSku();
-        Loops.Assignment3();
+        LoopsGuidedAssignment.GuidedAssignment();
     }
 }

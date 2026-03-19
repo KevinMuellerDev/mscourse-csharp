@@ -7,46 +7,29 @@ public static class Loops
     public static void ForLoopTask()
     {
         string[] names = ["Alex", "Eddie", "David", "Michael"];
-        for (int i = 0; i < names.Length; i++)
-        {
+        for (var i = 0; i < names.Length; i++)
             if (names[i] == "David")
-            {
                 names[i] = "Sammy";
-            }
-        }
 
-        foreach (var name in names)
-        {
-            Console.WriteLine(name);
-        }
+        foreach (var name in names) Console.WriteLine(name);
     }
 
     public static void FizzBuzz()
     {
-        for (int i = 0; i <= 100; i++)
-        {
-            if ((i % 3 == 0) && (i % 5 == 0))
-            {
+        for (var i = 0; i <= 100; i++)
+            if (i % 3 == 0 && i % 5 == 0)
                 Console.WriteLine("{0} FizzBuzz", i);
-            }
             else if (i % 3 == 0)
-            {
                 Console.WriteLine("{0} Fizz", i);
-            }
             else if (i % 5 == 0)
-            {
                 Console.WriteLine("{0} Buzz", i);
-            }
             else
-            {
                 Console.WriteLine(i);
-            }
-        }
     }
 
     public static void DoRandomWhile()
     {
-        Random random = new Random();
+        var random = new Random();
         int current;
 
         do
@@ -69,12 +52,12 @@ public static class Loops
 
     public static void GameAssignment()
     {
-        Random random = new Random();
-        int healthHero = 10;
-        int heroAttack = random.Next(1, 11);
-        int healthMonster = 10;
-        int monsterAttack = random.Next(1, 11);
-        bool gameIsActive = true;
+        var random = new Random();
+        var healthHero = 10;
+        var heroAttack = random.Next(1, 11);
+        var healthMonster = 10;
+        var monsterAttack = random.Next(1, 11);
+        var gameIsActive = true;
 
         while (gameIsActive)
         {
@@ -107,7 +90,7 @@ public static class Loops
     public static void UserInput()
     {
         string? readResult;
-        bool validEntry = false;
+        var validEntry = false;
 
         Console.WriteLine("Enter a string:");
 
@@ -119,14 +102,10 @@ public static class Loops
                 continue;
 
             if (readResult.Length >= 3)
-            {
                 validEntry = true;
-            }
             else
-            {
                 Console.WriteLine("Your input is invalid, please try again");
-            }
-        } while (validEntry == false);
+        } while (!validEntry);
 
         Console.WriteLine("Your input was: {0}", readResult);
     }
@@ -134,9 +113,9 @@ public static class Loops
     public static void Assignment1()
     {
         string? readInput;
-        int inputValue = 0;
+        var inputValue = 0;
         bool isNumeric;
-        bool inputAccepted = false;
+        var inputAccepted = false;
 
         Console.WriteLine("Provide a value between 5 and 10");
 
@@ -168,7 +147,7 @@ public static class Loops
     public static void Assignment2()
     {
         string? readInput;
-        bool isAccepted = false;
+        var isAccepted = false;
 
         do
         {
@@ -202,8 +181,8 @@ public static class Loops
 
         foreach (var myString in myStrings)
         {
-            int index = myString.IndexOf(".", StringComparison.Ordinal);
-            string usedString = myString;
+            var index = myString.IndexOf(".", StringComparison.Ordinal);
+            var usedString = myString;
             string mySentence;
 
             while (index != -1)

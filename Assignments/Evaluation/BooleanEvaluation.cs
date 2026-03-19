@@ -1,13 +1,14 @@
 using System;
+
 namespace MSCourse.Assignments.Evaluation;
 
 public static class BooleanEvaluation
 {
     public static void BooleanExpression()
     {
-        string sentence = "This is a sentence about a fox that lives in the wild";
-        string myValue = " A";
-        
+        var sentence = "This is a sentence about a fox that lives in the wild";
+        var myValue = " A";
+
         Console.WriteLine("a" == "A");
         Console.WriteLine("a" == "a");
         Console.WriteLine("a" == myValue.Trim().ToLower());
@@ -17,54 +18,44 @@ public static class BooleanEvaluation
 
     public static void CoinFlip()
     {
-        Random coin = new Random();
-        int coinValue = coin.Next(0, 2);
+        var coin = new Random();
+        var coinValue = coin.Next(0, 2);
         Console.WriteLine($"The coin landed on:{(coinValue == 0 ? "Head" : "Tails")} Value:{coinValue}");
     }
 
     public static void BusinessRules()
     {
-        string permission = "Admin|Manager";
-        int level = 55;
+        var permission = "Admin|Manager";
+        var level = 55;
 
         if (level > 55)
-        {
             Console.WriteLine("Welcome Super Admin user.");
-        }
-        else if (permission.Contains("Admin") && (level <= 55))
-        {
+        else if (permission.Contains("Admin") && level <= 55)
             Console.WriteLine("Welcome Admin user.");
-        }
-        else if (permission.Contains("Manager") && (level >= 20))
-        {
+        else if (permission.Contains("Manager") && level >= 20)
             Console.WriteLine("Contact an Admin for access.");
-        }
-        else if (permission.Contains("Manager") && (level < 20))
-        {
+        else if (permission.Contains("Manager") && level < 20)
             Console.WriteLine("You do not have sufficient Privileges");
-        }
         else
-        {
             Console.WriteLine("You do not have sufficient Privileges");
-        }
     }
 
     public static void RefactorVariableScope()
     {
         int[] numbers = { 4, 8, 15, 16, 23, 42 };
-        int total = 0;
-        bool found = false;
-        
-        foreach (int number in numbers)
+        var total = 0;
+        var found = false;
+
+        foreach (var number in numbers)
         {
             total += number;
             if (number == 42)
                 found = true;
         }
 
-        if (found) 
+        if (found)
             Console.WriteLine("Set contains 42");
-        
+
         Console.WriteLine($"Total: {total}");
     }
 
@@ -72,14 +63,14 @@ public static class BooleanEvaluation
     {
         // SKU = Stock Keeping Unit. 
 // SKU value format: <product #>-<2-letter color code>-<size code>
-        string sku = "01-MN-L";
+        var sku = "01-MN-L";
 
-        string[] product = sku.Split('-');
+        var product = sku.Split('-');
 
-        string type = "";
-        string color = "";
-        string size = "";
-        
+        var type = "";
+        var color = "";
+        var size = "";
+
         switch (product[0])
         {
             case "01":
