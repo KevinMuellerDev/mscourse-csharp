@@ -17,6 +17,6 @@ class Program
         //DataStructures.FraudulentIdAssignment();
         //DataAssignment.Assignment();
         //BooleanEvaluation.SwitchChallengeSku();
-        Loops.GameAssignment();
+        Loops.Assignment3();
     }
 }
