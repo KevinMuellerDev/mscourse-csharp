@@ -1,6 +1,6 @@
 using System;
 
-namespace MSCourse.Assignments;
+namespace MSCourse.Assignments.Loops;
 
 public static class Loops
 {
@@ -47,7 +47,7 @@ public static class Loops
     public static void DoRandomWhile()
     {
         Random random = new Random();
-        int current = random.Next(1, 11);
+        int current;
 
         do
         {
@@ -135,7 +135,7 @@ public static class Loops
     {
         string? readInput;
         int inputValue = 0;
-        bool isNumeric = false;
+        bool isNumeric;
         bool inputAccepted = false;
 
         Console.WriteLine("Provide a value between 5 and 10");
@@ -197,20 +197,20 @@ public static class Loops
 
     public static void Assignment3()
     {
-        string[] myStrings = new string[2]
+        string[] myStrings =
             { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
 
         foreach (var myString in myStrings)
         {
-            int index = myString.IndexOf(".");
+            int index = myString.IndexOf(".", StringComparison.Ordinal);
             string usedString = myString;
             string mySentence;
-            
+
             while (index != -1)
             {
                 mySentence = usedString.Remove(index);
                 usedString = usedString.Substring(index + 1).TrimStart();
-                index = usedString.IndexOf(".");
+                index = usedString.IndexOf(".", StringComparison.Ordinal);
                 Console.WriteLine(mySentence);
             }
 
