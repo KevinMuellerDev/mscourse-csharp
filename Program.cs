@@ -16,6 +16,6 @@ internal class Program
         //DataStructures.FraudulentIdAssignment();
         //DataAssignment.Assignment();
         //BooleanEvaluation.SwitchChallengeSku();
-        LoopsGuidedAssignment.GuidedAssignment();
+        LoopsChallenge.ChallengeLoops();
     }
 }
