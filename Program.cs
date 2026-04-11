@@ -1,4 +1,5 @@
-﻿using MSCourse.Assignments.Loops;
+﻿using MSCourse.Assignments.DataTypes;
+using MSCourse.Assignments.Loops;
 
 
 namespace MSCourse;
@@ -16,6 +17,10 @@ internal class Program
         //DataStructures.FraudulentIdAssignment();
         //DataAssignment.Assignment();
         //BooleanEvaluation.SwitchChallengeSku();
-        LoopsChallenge.ChallengeLoops();
+        //LoopsChallenge.ChallengeLoops();
+        //DataTypes.MinMax();
+        //DataTypes.FloatingIntegrals();
+        DataTypes.ConvertStringToNumeric();
+        
     }
 }
