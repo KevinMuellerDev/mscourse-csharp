@@ -1,5 +1,5 @@
 ﻿using MSCourse.Assignments.DataTypes;
-using MSCourse.Assignments.Loops;
+//using MSCourse.Assignments.Loops;
 
 
 namespace MSCourse;
@@ -20,7 +20,7 @@ internal class Program
         //LoopsChallenge.ChallengeLoops();
         //DataTypes.MinMax();
         //DataTypes.FloatingIntegrals();
-        DataTypes.ConvertStringToNumeric();
-        
+        //DataTypes.ConvertStringToNumeric();
+        DataTypes.ConvertChallenge();
     }
 }
